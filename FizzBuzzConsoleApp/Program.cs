@@ -10,7 +10,14 @@
             var fizzBuzzer = new FizzBuzz();
             string value = fizzBuzzer.DemoMethod();
             Console.WriteLine(value);
-            Console.ReadKey();
+
+            //string value = fizzBuzzer.FizzBuzzifyAnInt(5); //used to test
+            //Console.WriteLine(value);
+
+            foreach (var x in fizzBuzzer.FizzBuzzValuesForRange(1, 100)) //used to iterate through the list printing the FizzBuzz values
+            {
+                Console.WriteLine(x);
+            }
         }
     }
 }
